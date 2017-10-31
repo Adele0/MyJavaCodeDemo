@@ -1,0 +1,7 @@
+按照流的方向：
+InputStream（字节输入）OutputStream（字节输出）
+Reader（字符输入）Writer（字符输出）
+按照流的操作单位
+字节流： 1. 字节操作字节（二进制，音频，视频）；不用close()，也能写到磁盘
+字符流： 1. 字符操作字节（文本内容）；必须直接或间接调用flush()才能写到磁盘
+转换流：InputStreamReader是字节流通向字符流的桥梁；OutputStreamReader是字符流通向字节流的桥梁；
