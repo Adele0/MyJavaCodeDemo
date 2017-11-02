@@ -1,0 +1,2 @@
+这是用来测试缓冲区的文件
+BufferInputStream读取按照byte[] 的单位来读，同FileInputStream一模一样
