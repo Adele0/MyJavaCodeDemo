@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+	<student id="属性">
+	
+		<name>
+		&lt;Adele&gt;
+		</name>
+		
+		<sex>female
+		<![CDATA[<被CDATA格式包围的内容不会被改变，即使说，不用使用转义>]]>
+		</sex>
+	</student>
+</person>
