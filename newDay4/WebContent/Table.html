@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<!-- table标签下面：tbody---tr td -->
+		<table border = "1"  cellspacing = "0">
+		<tbody>
+			<tr>
+				<td>吃饭</td>
+				<td>编程</td>
+				<td>睡觉</td>
+			</tr>
+			<tr>
+				<td>吃饭</td>
+				<td>&nbsp;</td>
+				<td>睡觉</td>
+			</tr>
+		</tbody>
+		</table>
+		
+		<br>
+<!-- thead(加粗) 与 tbody平行关系-->	
+	<table border="1" cellspacing="0">
+		<thead>
+			<tr>
+				<td>早</td>
+				<td>中</td>
+				<td>晚</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>吃饭</td>
+				<td>编程</td>
+				<td>睡觉</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<br>
+<!-- 跨列colspan在td上使用，夸n列，删除这个带colspan标记的td后面的n-1-->	
+	<table border="1" cellspacing="0">
+		<thead>
+			<tr>
+				<td>&nbsp;</td>
+				<td colspan="2">中餐</td>
+				<!-- 上面colspan为2，此行（2-1）删除 -->
+				<td colspan="2">非中餐</td>
+				<!-- 上面colspan为2，此行（2-1）删除 -->
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+<!-- 跨行rowspan在td上使用，夸n行，后面tr里的td对应少n-1个-->		
+				<td rowspan="2">午市</td>
+				<td>扬州炒饭</td>
+				<td >紫菜蛋花汤</td>
+				<td >咖喱鸡肉</td>
+				<td >罗宋汤</td>
+			</tr>
+			<tr>
+				<td>青椒肉丝盖饭</td>
+				<td >排骨玉米汤</td>
+				<td >牛排</td>
+				<td >沙拉</td>
+			</tr>
+			<tr>
+				<td rowspan="2">夜市</td>
+				<td>串串</td>
+				<td >啤酒</td>
+				<td >焗虾</td>
+				<td >红酒</td>
+			</tr>
+			<tr>
+				<td>火锅</td>
+				<td >雪碧</td>
+				<td >生鱼片</td>
+				<td >香槟</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

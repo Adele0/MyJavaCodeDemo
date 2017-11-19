@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		用的相对多
+		ul li 是无序列表，成对出现，ul下面只能 存在li，li下面可以存在其他任何标签
+	 -->
+	 <ul>
+	 	<li>
+	 		<span>无序ul的li下面的span</span>
+	 	</li>
+	 	<li>
+	 		<p>无序ul的li下面的p</p>
+	 		<ol>
+	 			<li>
+	 				<p>无序ul下面的有序ol的p1</p>
+	 			</li>
+	 			<li>
+	 				<p>无序ul下面的有序ol的p2</p>
+	 			</li>
+	 			</ol>
+	 	</li>
+	 </ul>
+	 
+	 <!-- 
+	    用的少
+		ol li 是有序列表，成对出现，ol下面只能 存在li，li下面可以存在其他任何标签
+	 -->
+	 	 <ol>
+	 	<li>
+	 		<span>有序ol的li下面的span</span>
+	 	</li>
+	 	<li>
+	 		<p>有序ol的li下面的p</p>
+	 		<ul>
+	 			<li>
+	 				<p>有序ol下面的无序ul的p</p>
+	 			</li>
+	 		</ul>
+	 	</li>
+	 </ol>
+	 
+	 <!-- 
+	 	用的多
+		dl 和dt、dd也是组合；dl 只能放dt dd，不能放其他标签
+	 -->
+	 <dl>
+	 	<dt>素菜</dt>
+	 		<dd>藕片</dd>
+	 		<dd>土豆片</dd>
+	 		<dd>苕粉</dd>
+	 		<dd>豆芽</dd>
+	 		<dd>冬瓜</dd>
+	 	<dt>荤菜</dt>
+	 		<dd>黄喉</dd>
+	 		<dd>毛肚</dd>
+	 		<dd>肥牛</dd>
+	 		<dd>麻辣牛肉</dd>
+	 		<dd>肥羊</dd>
+	 </dl>
+</body>
+</html>

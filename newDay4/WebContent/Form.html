@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>机机的form</title>
+</head>
+<body>
+	<!-- form表单：可以和用户进行交互（登陆，注册，收集信息） 
+			form表单提交方式：1.GET(网页访问回车，传输内容2k-8k根据不同浏览器，明文不安全，会显示到地址栏)
+											 2.POST（向服务器传输文件，理论上是没有数据大小的限制，不会显示到地址栏，安全）
+			form表单属性：
+									action代表表单提交的地址（必须有）	当action不写，或者写"#",提交数据到本页
+									method要么是get要么是post
+										input的属性:
+												name：input元素的名字
+												value：任何字符，控件初始内容
+												maxlength：限制字段最长长度
+												checked：默认选取，此布尔属性只适合type属性是radio（单选框）和checkbox（复选框）
+												readonly：只读（会向后台提交数据）
+												disable：加载禁用此元素（不会向后台提交数据）
+											type="text"(当input无type时，默认是text) 	
+											type="password"(输入的内容会变成点，但提交地址栏是明文，不会使用) 	
+											type="checkbox"(复选框)
+											type="radio"(单选框)
+											type="submit"(提交)
+											type="reset"(重置)
+											type="image"(提交图片，src指定图片来源)
+											type="color"(颜色选择器)
+											type="button"(普通按钮)
+											type="hidden"(隐藏控件，不让用户看)
+											type="file"(提交文件)
+	-->
+	<form action="" method="get">
+		<input name="显示在地址栏的内容"  value="form默认名,可删除" maxlength="20">
+		<input type="button" name="username" value="输入名字">
+		<br>
+		<input type="password" name="ps"  value="" maxlength="20">
+		<input type="button" name="ps" value="输入密码">
+		<br>
+		<br>
+		选择性别：
+		<input type="radio" name="sex" value="female" checked>女
+		<input type="radio" name="sex" value="male">男
+		<br>
+		<br>
+		选择喜欢的食物：
+		<br>
+		<input type="checkbox" name="favorite_food" value="lotus_root">藕
+		<input type="checkbox" name="favorite_food" value="mushroom">蘑菇
+		<input type="checkbox" name="favorite_food" value="mutton" checked>羊肉
+		<input type="checkbox" name="favorite_food" value="beef" checked>牛肉
+		<br>
+		<br>
+		选择喜欢的颜色：
+		<input type="color">
+		<br>
+		<br>
+		选择喜欢的图片：
+		<input type="image" src="../images/3.jpg">
+		<br>
+		<br>
+		选择喜欢的文件：
+		<input type="file">
+		<br>
+		<br>
+		此处有隐藏：
+		<input type="hidden">
+		<br>
+		<br>
+		<input type="submit" name="提交数据" value="点击提交">
+		<input type="reset" name="重置数据" value="点击重置">
+	</form>
+</body>
+</html>
