@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<!--通过选择器配合style标签，可以批量处理代码
+			最好卸载head里。
+			选择器格式：style--》 标签名{}
+							所有标签名统一样式使用*{}，但是不建议这样做
+		-->
+		
+		<style type="text/css">
+			span{
+				color:blueviolet ;
+				font-size: small;
+				font-family:"arial, helvetica, sans-serif";
+			}
+			p{
+				color:aquamarine;
+				background-color:black;
+				font-size: medium;
+				font-family:elephant;
+			}
+			
+			/*类选择器
+			 	 CSS的注释：除号星号 星号除号
+			 	 类选择器格式：点class名{}
+			**/	
+			.first{
+				color:darkorange;
+				background-color:pink;
+				font-size: large;
+				font-family:arial;
+			}
+			.second{
+				color: chartreuse;
+				font-size:larger;
+			}
+			
+			/*ID选择器
+			  ID选择器格式：#ID名{}
+			  ID选择器的设置跟其他选择器冲突时，以ID为准
+			**/
+			#div_1{
+				background-color:yellow;
+			}
+			#p_1{
+				font-size:x-large;
+				background-color: crimson;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p id="p_1">基本选择器的使用方法:</p>
+		<span>所有小号span的统一style设置。</span>
+		<br />
+		<span>所有小号span的统一style设置。</span>
+		<br />
+		<span>所有小号span的统一style设置。</span>
+		
+		<p>所有中号p的统一style设置。</p>
+		<p>所有中号p的统一style设置。</p>
+		<p>所有中号p的统一style设置。</p>
+	
+		<div class="first">所有class为1的div统一style设置</div>
+		<div class="first">所有class为1的div统一style设置</div>
+		<div class="second">所有class不为1的div统一style设置</div>
+		<div class="second">所有class不为1的div统一style设置</div>
+		<div class="second" id="div_1">所有class不为1的div统一style设置,但是有唯一ID</div>
+		
+	</body>
+</html>

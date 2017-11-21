@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<script type="text/javascript">
+		var a = 3;
+		a += 8;
+		console.log(a);
+		console.log("--------------------");
+		
+		// == 相等（只比较内容，不比较类型）
+		var b = "8";//字符串
+		var c = 8;//数字
+		console.log(b==c);//true
+		// === 绝对相等（内容 类型都比较）
+		console.log(b===c);//false
+		console.log("--------------------");
+		
+		// ！= 不相等（只比较内容，不比较类型）
+		console.log(2!="2");//false
+		// ！== 绝对不相等（内容 类型都比较）
+		console.log(2!=="2");//true
+		console.log("--------------------");
+		
+		//在逻辑运算中：0 "" false null undefined都表示false
+		var d = 0 ||"" || 3;
+		console.log(d);
+		var d1 = 0 ||"逻辑或：返回第一个找到为true的值" || 3;
+		console.log(d1);
+		var d2 = 0 || null ||"" ;
+		console.log(d2);
+		console.log("逻辑或：（全是false则）返回空白，注意上面的空白行")
+		console.log("--------------------");
+		
+		var e = null && "" && 3;
+		console.log(e);
+		var e1 = true &&"逻辑与：返回第一个找到为false的值" && 0;
+		console.log(e1);
+		var e2 = true && 1 &&"逻辑与：（全是true则）返回最后一个找到为true的值" ;
+		console.log(e2);
+		console.log("------逻辑或的实际应用：------");
+		
+		var m = 15;
+		var n = m || 5;
+		console.log("n="+ n);
+		console.log("给n确定一个默认值5，当传入的m为空，以5为准；当传入的m不为空，以m为准；");
+	</script>
+	
+	<body>
+	</body>
+</html>

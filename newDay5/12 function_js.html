@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script type="text/javascript">
+			function test(a,b){//参数不需要var
+				console.log("a="+a);
+				console.log("b="+b);				
+				console.log("被调用");
+				return a+b;
+			}
+			
+//			test();不会报错，会显示：a=undefined； b=undefined；
+			var k = test(1,5);
+			console.log(k);
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

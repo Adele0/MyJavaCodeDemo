@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script type="text/javascript">
+			function warning(){
+				var username = document.getElementById("username");
+				var pwd = document.getElementById("pwd");
+				var rewrite = document.getElementById("rewrite");
+				if (username.value.length < 3){
+					alert("请输入至少三个字符");
+					return;
+				}
+				if (pwd.value == "") {
+					alert("密码不能为空");
+					return;
+				}
+				if (rewrite.value != pwd.value){
+					alert("两次输入不一致");
+					return;
+				}
+			}
+			
+			function verify(){
+				//form表单里有type="submit"才会执行action里onsubmit
+				//验证成功返回 true，为true的时候继续执行submit
+				//验证成功返回 false,为false的时候终止submit
+				alert("验证成功");
+				return true;
+			}
+		</script>
+		
+	</head>
+	<body>
+		<form action="" method="get" onsubmit="return verify()">	
+			用户名： <input type="text" id="username" name="username" /><br />
+			密码： <input type="password" id="pwd" name="pwd" /><br />
+			重复密码： <input type="password" id="rewrite" name="rewrite" /><br />
+			<input type="button" value="点击确认" onclick="warning()"/>
+			<input type="submit" id="submit" name="点击提交" />
+		</form>
+	</body>
+</html>

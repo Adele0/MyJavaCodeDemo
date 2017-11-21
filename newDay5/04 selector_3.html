@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--层级选择器(空格)
+			格式：style--》 标签名 标签名{}
+			
+			子选择器>(直接子元素，找到第一个匹配的)
+			格式：style--》 标签名>标签名{}
+		-->
+		<style type="text/css">
+			div span{
+				color: salmon;
+			}
+			div p{
+				background-color: #FA8072;
+			}
+			
+			div>span{
+				font-size: x-large;
+			}
+		</style>
+	</head>
+	<body>
+		<div>父div
+			<div>子div
+				<div>孙div<br />
+					<span>孙div下面的span
+					<div>孙div下面的span的div,被继承</div>
+					</span>
+				</div>
+				<p>和孙div平级的p</p>
+			</div>
+		</div>
+	</body>
+</html>
