@@ -1,0 +1,11 @@
+INSERT INTO `employee` VALUES (1, 'Adele', 1, 7000, 1);
+INSERT INTO `employee` VALUES (2, 'Emily', 2, 7000, 1);
+INSERT INTO `employee` VALUES (3, 'Ben', 3, 8000, 2);
+INSERT INTO `employee` VALUES (4, 'Danial', 4, 12000, 2);
+INSERT INTO `employee` VALUES (5, 'Lee', 5, 5000, 3);
+INSERT INTO `employee` VALUES (6, 'Lucy', 6, 5500, 3);
+INSERT INTO `employee` VALUES (7, 'Luke', 7, 10000, 1);
+INSERT INTO `employee` VALUES (8, 'Sam', 8, 8000, 4);
+INSERT INTO `employee` VALUES (9, 'Justin', 9, 6000, 4);
+INSERT INTO `employee` VALUES (10, 'Sawyer', 10, 8000, 4);
+INSERT INTO `employee` VALUES (11, 'Nobody', 11, 1000, 3);
