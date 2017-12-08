@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>myTomcat</title>
+</head>
+<body>
+1.<br>
+	（1.1内嵌式）<br>
+	直接把eclipse中建的tomact相关项目复制到Tomcat的webapp文件夹下。<br>
+	这种部署方式简单，但是随着项目的增多，Tomcat的目录越来越大，启动越来越慢<br>
+	（1.2外链式）主要用这种方式<br>
+	将eclipse中建的tomact相关项目部署到Tomcat配置中：<br>
+	在server.xml中添加以下配置：（path=""这里的内容是在地址栏需要输入的内容）<br>
+	&lt;Context path="" docBase="F:\dazigou\STUDY\EclipseWorkspace\tomcat\webapp"/&gt;<br>
+	有多个项目需要部署，需要添加多个Context path="" docBase=""<br>
+	（1.3其他方式）<br>
+	将&lt;Context docBase="F:\dazigou\STUDY\EclipseWorkspace\tomcat\webapp"/&gt;（这里不需要path）
+	写到conf的Catalina的localhost中新建的任意名字的xml，这个任意名字就是浏览器访问localhost的需要写的地址<br>
+	例如conf-Catalina-localhost-oa.xml(写上context之后)在浏览器地址栏输入：localhost/oa<br>
+	（1.4虚拟机）<br>
+	C:\Windows\System32\drivers\etc\hosts<br>
+	127.0.0.1       localhost<br>
+	127.0.0.1      tmall.com<br>
+	127.0.0.1      jd.com<br>
+	再在server.xml中将host name改成上面需要的三种<br>
+	分别将路径配好，注意path=""不能少&lt;Context path="" docBase="F:\dazigou\STUDY\EclipseWorkspace\tomcat\webapp"/&gt;<br>
+	<br>
+	<br>
+2.<br>
+	如果新建的动态网页项目dynamic web project
+	右键run on server就不需要配置Context path="" docBase=""
+	有多少个项目 都在run里有了自己的配置。
+	<br>
+	<br>
+3.	<br>
+	如果只是更改HTML文件，直接在浏览器中刷新就行。（F5刷新，Ctrl+F5强制刷新）
+	<br>
+	<br>
+4.	<br>
+	4xx – 客户端错误，如：404未找到；2xx – 成功，如：200确定（客户端请求成功）；5xx – 服务器错误，如：500（内部服务器错误）
+</body>
+</html>
