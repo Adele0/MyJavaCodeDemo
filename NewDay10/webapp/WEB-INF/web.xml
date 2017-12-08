@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true">
+
+
+	<servlet>
+		<servlet-name> hello</servlet-name>
+		
+		<servlet-class>cn.itsource._01servlet.MyFirstServlet</servlet-class>
+		
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>			
+		</init-param>
+		
+		<init-param>
+			<param-name>email</param-name>
+			<param-value>lin2huan@gmail.com</param-value>			
+		</init-param>
+	</servlet>
+	
+	
+	<servlet>
+		<servlet-name> using</servlet-name>
+		
+		<servlet-class>cn.itsource._02servletExtends.UsingServlet</servlet-class>
+		
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>GB2312</param-value>			
+		</init-param>
+		
+		<init-param>
+			<param-name>email</param-name>
+			<param-value>438296186@qq.com</param-value>			
+		</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>using</servlet-name>
+		<url-pattern>/using</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>html</servlet-name>
+		
+		<servlet-class>cn.itsource._03httpServlet.testHttpServlet</servlet-class>
+		
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>American Standard Code for Information Interchange</param-value>			
+		</init-param>
+
+		<init-param>
+			<param-name>email</param-name>
+			<param-value>xuwang2huan@163.com</param-value>			
+		</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>html</servlet-name>
+		<url-pattern>/html</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		<servlet-name>html2</servlet-name>
+		
+		<servlet-class>cn.itsource._03httpServlet.testHttpServlet2</servlet-class>
+		
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>American Standard Code for Information Interchange</param-value>			
+		</init-param>
+
+		<init-param>
+			<param-name>email</param-name>
+			<param-value>xuwang2huan@163.com</param-value>			
+		</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>html2</servlet-name>
+		<url-pattern>/html2</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
