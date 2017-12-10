@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>NewDay13_servlet_jsp</display-name>
+ 
+		<!-- 设置全局配置，例如：编码 -->
+		<context-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</context-param>
+		
+		<!-- 配置全局错误页面 -->
+		<error-page>
+				<error-code>404</error-code>
+				<location>/404.jsp</location>
+		</error-page>
+		
+		<error-page>
+				<error-code>500</error-code>
+				<location>/500.jsp</location>
+		</error-page>
+</web-app>
